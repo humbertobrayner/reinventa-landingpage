@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reinventa+</title>
+  <meta name="description" content="Ligando sua experiência ao futuro.">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://reinventa-final.vercel.app/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <!-- Header-->
+  <header class="bg-gray-100">
+    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only"></span>
+          <img src="assets\images\logo.png" alt="logo" class="h-10 w-auton" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400">
+          <span class="sr-only">Abrir menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+            aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <el-popover-group class="hidden lg:flex lg:gap-x-12">
+        <a href="#proposta" class="text-sm/6 font-semibold text-gray-900">A proposta</a>
+        <a href="#importancia" class="text-sm/6 font-semibold text-gray-900">Nossa importância</a>
+        <a href="#parceiros" class="text-sm/6 font-semibold text-gray-900">Parceiros</a>
+        <a href="#quem-somos" class="text-sm/6 font-semibold text-gray-900">Quem somos</a>
+      </el-popover-group>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="https://reinventa-final.vercel.app/login"
+          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 hover:scale-[1.03] active:scale-95 shadow-md transition-all duration-200 text-center">Acessar conta</a>
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Reinventa+</span>
+                <img src="assets\images\logo.png" alt="logo" class="h-10 w-auton" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Fechar menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                  aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="#proposta" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">A proposta</a>
+                  <a href="#importancia" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Nossa importância</a>
+                  <a href="#parceiros" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Parceiros</a>
+                  <a href="#quem-somos" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Quem somos</a>
+                </div>
+                <div class="py-6">
+                  <a href="https://reinventa-final.vercel.app/login" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 hover:scale-[1.03] active:scale-95 shadow-md transition-all duration-200 text-center">Acessar conta</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  <!-- Fim Header -->
+
+  <!-- Banner -->
+  <div class="relative overflow-hidden bg-gray-100">
+    <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+      <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+        <div class="sm:max-w-lg">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Reinvente o seu caminho</h1>
+          <h1 class="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">profissional</h1>
+          <p class="mt-8 text-xl text-gray-500">O Reinventa+ conecta talentos a oportunidades e cursos pensados para o
+            futuro do trabalho — mais inclusivo, sustentável e alinhado às necessidades reais do mercado. </p>
+        </div>
+        <div>
+          <div class="mt-10">
+            <!-- Decorative image grid -->
+            <div aria-hidden="true"
+              class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+              <div
+                class="absolute transform sm:top-0 sm:left-1/2 sm:translate-x-8 lg:top-1/2 lg:left-1/2 lg:translate-x-8 lg:-translate-y-1/2">
+                <div class="flex items-center space-x-6 lg:space-x-8">
+                  <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                      <img src="assets\images\img01.png" alt="" class="size-full object-cover" />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="assets\images\img02.png" alt="" class="size-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="assets\images\img03.png" alt="" class="size-full object-cover" />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="assets\images\img04.png" alt="" class="size-full object-cover" />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="assets\images\img05.png" alt="" class="size-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="assets\images\img06.png" alt="" class="size-full object-cover" />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="assets\images\img07.png" alt="" class="size-full object-cover" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#proposta"
+              class="inline-block bg-white border border-indigo-400 text-gray-900 px-6 py-3 rounded-xl font-semibold hover:bg-indigo-200 hover:scale-[1.03] active:scale-95 shadow-md transition-all duration-200 text-center">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Banner -->
+
+  <!-- Seção 1-->
+  <div class="bg-white py-24 sm:py-32" id="proposta">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base/7 font-semibold text-indigo-600">Reinventa+</h2>
+        <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+          Descubra um novo caminho na tecnologia</p>
+        <p class="mt-6 text-lg/8 text-gray-700">Aprender nunca teve idade. Conecte-se ao futuro com cursos, bootcamps e
+          oportunidades pensadas para você.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 640 640"><path fill="#ffffff" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320C528 205.1 434.9 112 320 112zM390.7 233.9C398.5 223.2 413.5 220.8 424.2 228.6C434.9 236.4 437.3 251.4 429.5 262.1L307.4 430.1C303.3 435.8 296.9 439.4 289.9 439.9C282.9 440.4 276 437.9 271.1 433L215.2 377.1C205.8 367.7 205.8 352.5 215.2 343.2C224.6 333.9 239.8 333.8 249.1 343.2L285.1 379.2L390.7 234z"/></svg>
+              </div>
+              Cursos básicos sobre tecnologia
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600">Comece do zero, sem pressa e sem complicação. Aprenda a usar ferramentas digitais, programação e muito mais.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><path fill="#ffffff" d="M528 320C528 205.1 434.9 112 320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320zM241.3 383.4C256.3 399 282.4 416 320 416C357.6 416 383.7 399 398.7 383.4C407.9 373.8 423.1 373.5 432.6 382.7C442.1 391.9 442.5 407.1 433.3 416.6C411.2 439.6 373.3 464 320 464C266.7 464 228.8 439.6 206.7 416.6C197.5 407 197.8 391.8 207.4 382.7C217 373.6 232.2 373.8 241.3 383.4zM208 272C208 254.3 222.3 240 240 240C257.7 240 272 254.3 272 272C272 289.7 257.7 304 240 304C222.3 304 208 289.7 208 272zM400 240C417.7 240 432 254.3 432 272C432 289.7 417.7 304 400 304C382.3 304 368 289.7 368 272C368 254.3 382.3 240 400 240z"/></svg>
+              </div>
+              Aulas sobre migração de carreira
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600">Descubra como transformar sua experiência em vantagem competitiva e dar os primeiros passos para uma nova profissão.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 640 640"><path fill="#ffffff" d="M320.1 32C329.1 32 337.4 37.1 341.5 45.1L415 189.3L574.9 214.7C583.8 216.1 591.2 222.4 594 231C596.8 239.6 594.5 249 588.2 255.4L473.7 369.9L499 529.8C500.4 538.7 496.7 547.7 489.4 553C482.1 558.3 472.4 559.1 464.4 555L320.1 481.6L175.8 555C167.8 559.1 158.1 558.3 150.8 553C143.5 547.7 139.8 538.8 141.2 529.8L166.4 369.9L52 255.4C45.6 249 43.4 239.6 46.2 231C49 222.4 56.3 216.1 65.3 214.7L225.2 189.3L298.8 45.1C302.9 37.1 311.2 32 320.2 32zM320.1 108.8L262.3 222C258.8 228.8 252.3 233.6 244.7 234.8L119.2 254.8L209 344.7C214.4 350.1 216.9 357.8 215.7 365.4L195.9 490.9L309.2 433.3C316 429.8 324.1 429.8 331 433.3L444.3 490.9L424.5 365.4C423.3 357.8 425.8 350.1 431.2 344.7L521 254.8L395.5 234.8C387.9 233.6 381.4 228.8 377.9 222L320.1 108.8z"/></svg>
+              </div>
+              Bootcamps intensivos
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600">Para quem quer acelerar a transição e mergulhar em projetos práticos.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base/7 font-semibold text-gray-900">
+              <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 640 640"><path fill="#ffffff" d="M235.5 102.8C256.3 68 300.5 54 338 71.6L345.2 75.4C380 96.3 394 140.5 376.4 178L376.4 178L362.3 208L472 208L479.4 208.4C515.7 212.1 544 242.8 544 280C544 293.2 540.4 305.4 534.2 316C540.3 326.6 543.9 338.8 544 352C544 370.3 537.1 386.8 526 399.5C527.3 404.8 528 410.3 528 416C528 441.1 515.1 463 495.8 475.9C493.9 511.4 466.4 540.1 431.4 543.6L424 544L319.9 544C301.9 544 284 540.6 267.3 534.1L260.2 531.1L259.5 530.8L252.9 527.6L252.2 527.3L240 520.8C227.7 514.3 216.7 506.1 207.1 496.7C203 523.6 179.8 544.1 151.8 544.1L119.8 544.1C88.9 544.1 63.8 519 63.8 488.1L64 264C64 233.1 89.1 208 120 208L152 208C162.8 208 172.9 211.1 181.5 216.5L231.6 110L232.2 108.8L234.9 103.8L235.5 102.9zM120 256C115.6 256 112 259.6 112 264L112 488C112 492.4 115.6 496 120 496L152 496C156.4 496 160 492.4 160 488L160 264C160 259.6 156.4 256 152 256L120 256zM317.6 115C302.8 108.1 285.3 113.4 276.9 127L274.7 131L217.9 251.9C214.4 259.4 212.4 267.4 211.9 275.6L211.8 279.8L211.8 392.7L212 400.6C214.4 433.3 233.4 462.7 262.7 478.3L274.2 484.4L280.5 487.5C292.9 493.1 306.3 496 319.9 496L424 496L426.4 495.9C438.5 494.7 448 484.4 448 472L447.8 469.4C447.7 468.5 447.6 467.7 447.4 466.8C444.7 454.7 451.7 442.6 463.4 438.8C473.1 435.7 480 426.6 480 416C480 411.7 478.9 407.8 476.9 404.2C470.6 393.1 474.1 379 484.9 372.2C491.7 367.9 496.1 360.4 496.1 352C496.1 344.9 493 338.5 487.9 334C482.7 329.4 479.7 322.9 479.7 316C479.7 309.1 482.7 302.6 487.9 298C493 293.5 496.1 287.1 496.1 280L496 277.6C494.9 266.3 485.9 257.3 474.6 256.2L472.2 256.1L324.7 256.1C316.5 256.1 308.9 251.9 304.5 245C300.1 238.1 299.5 229.3 303 221.9L333 157.6C340 142.6 334.4 124.9 320.5 116.6L317.6 115z"/></svg>
+              </div>
+              Vagas em empresas de tecnologia
+            </dt>
+            <dd class="mt-2 text-base/7 text-gray-600">Conecte-se com empresas que valorizam diversidade e experiência.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!--Fim Seção 1-->
+
+  <!-- Seção 2 -->
+   <div class="relative isolate overflow-hidden bg-gray-100 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" id="importancia">
+     <div
+       class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+       <div
+         class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+         <div class="lg:pr-4">
+           <div class="lg:max-w-lg">
+             <h1 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Por que o Reinventa+ é importante para você?</h1>
+             <p class="mt-6 text-xl/8 text-gray-700">O mercado está cheio de oportunidades, e sua experiência de vida é um diferencial. Nossa missão é ajudar você a se reinventar, aprender novas habilidades e conquistar espaço nas áreas mais promissoras do futuro.</p>
+           </div>
+         </div>
+       </div>
+       <div
+         class="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+         <img src="assets\images\sectionimg.png" alt=""
+           class="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228" />
+       </div>
+       <div
+         class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+         <div class="lg:pr-4">
+           <div class="max-w-xl text-base/7 text-gray-600 lg:max-w-lg">
+             <ul role="list" class="space-y-8 text-gray-600">
+               <li class="flex gap-x-3">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 640 640"><path fill="#4f39f6" d="M416 224C398.3 224 384 209.7 384 192C384 174.3 398.3 160 416 160L576 160C593.7 160 608 174.3 608 192L608 352C608 369.7 593.7 384 576 384C558.3 384 544 369.7 544 352L544 269.3L374.6 438.7C362.1 451.2 341.8 451.2 329.3 438.7L224 333.3L86.6 470.6C74.1 483.1 53.8 483.1 41.3 470.6C28.8 458.1 28.8 437.8 41.3 425.3L201.3 265.3C213.8 252.8 234.1 252.8 246.6 265.3L352 370.7L498.7 224L416 224z"/></svg>
+                 <span><strong class="font-semibold text-gray-900">O mercado de tecnologia está em expansão:</strong><br> Há milhares de vagas abertas todos os dias, e falta gente qualificada.</span>
+               </li>
+               <li class="flex gap-x-3">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 640 640"><path fill="#4f39f6" d="M264 112L376 112C380.4 112 384 115.6 384 120L384 160L256 160L256 120C256 115.6 259.6 112 264 112zM208 120L208 544L432 544L432 120C432 89.1 406.9 64 376 64L264 64C233.1 64 208 89.1 208 120zM480 160L480 544L512 544C547.3 544 576 515.3 576 480L576 224C576 188.7 547.3 160 512 160L480 160zM160 544L160 160L128 160C92.7 160 64 188.7 64 224L64 480C64 515.3 92.7 544 128 544L160 544z"/></svg>
+                 <span><strong class="font-semibold text-gray-900">Sua experiência conta:</strong><br> Empresas buscam profissionais com maturidade, visão estratégica e capacidade de adaptação.</span>
+               </li>
+               <li class="flex gap-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 640 640"><path fill="#4f39f6" d="M320 205.3L320 514.6L320.5 514.4C375.1 491.7 433.7 480 492.8 480L512 480L512 160L492.8 160C450.6 160 408.7 168.4 369.7 184.6C352.9 191.6 336.3 198.5 320 205.3zM294.9 125.5L320 136L345.1 125.5C391.9 106 442.1 96 492.8 96L528 96C554.5 96 576 117.5 576 144L576 496C576 522.5 554.5 544 528 544L492.8 544C442.1 544 391.9 554 345.1 573.5L332.3 578.8C324.4 582.1 315.6 582.1 307.7 578.8L294.9 573.5C248.1 554 197.9 544 147.2 544L112 544C85.5 544 64 522.5 64 496L64 144C64 117.5 85.5 96 112 96L147.2 96C197.9 96 248.1 106 294.9 125.5z"/></svg>
+                 <span><strong class="font-semibold text-gray-900">Aprender é possível e prazeroso</strong><br> Com nossa metodologia, você aprende no seu ritmo, com suporte e comunidade acolhedora.</span>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  <!-- Fim Seção 2 -->
+
+  <!-- Seção 3 -->
+   <div class="bg-white py-24 sm:py-32" id="parceiros">
+     <div class="mx-auto max-w-7xl px-6 lg:px-8">
+       <h2 class="text-center text-lg/8 font-semibold text-gray-900">Nossos parceiros</h2>
+       <div class="mx-auto mt-10 grid max-w-lg items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div class="col-span-2 max-h-8 w-auto lg:col-span-1 flex items-center justify-center">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvestibular.fiap.com.br%2Fimagens%2Flogo-fiap.png&f=1&nofb=1&ipt=f3cc77a9451d10dcf4e5e97da9728c274665db45ca3afcb00ac96c9b403fc5ca" alt="Transistor" class="max-h-8 w-auto"/>
+        </div>
+
+        <div class="col-span-2 max-h-8 w-auto lg:col-span-1 flex items-center justify-center">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alura.com.br%2Fartigos%2Fassets%2Fpara-que-serve-adobe-illustrator%2Fimagem1.jpg&f=1&nofb=1&ipt=da04b38fe0695886d37ffb1615dd8cbbc72a594d0279d6eb7e6b0747a34e0f2a" alt="Transistor" class="max-h-8 w-auto"/>
+        </div>
+
+        <div class="col-span-2 max-h-8 w-auto lg:col-span-1 flex items-center justify-center">
+          <img src="https://pm3.com.br/wp-content/uploads/2025/03/Logo-Grupo-Alun-Preto-2-2.png" alt="Transistor" class="max-h-8 w-auto"/>
+        </div>
+
+       </div>
+     </div>
+   </div>
+  <!-- Fim Seção 3 -->
+
+  <!-- Quem somos -->
+  <div class="bg-gray-100 py-24 sm:py-32" id="quem-somos">
+      <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div class="max-w-xl">
+          <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Quem somos
+          </h2>
+          <p class="mt-6 text-lg/8 text-gray-600">Alunos de Web Design da FIAP, somos apaixonados por tecnologia e acessbilidade digital.</p>
+        </div>
+        <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                src="https://avatars.githubusercontent.com/u/111300233?v=4"
+                alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+              <div>
+                <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Thaís Sindice</h3>
+                <p class="text-sm/6 font-semibold text-indigo-600">Idealizadora</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                src="https://avatars.githubusercontent.com/u/161251887?v=4"
+                alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+              <div>
+                <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Humberto Brayner</h3>
+                <p class="text-sm/6 font-semibold text-indigo-600">Idealizador</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                src="https://avatars.githubusercontent.com/u/174154523?v=4"
+                alt="" class="size-16 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+              <div>
+                <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Ana Carolina Leite</h3>
+                <p class="text-sm/6 font-semibold text-indigo-600">Idealizadora</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <!-- Fim Quem somos -->
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-gray-700">
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+
+        <!-- Texto -->
+        <p class="text-sm text-center sm:text-left">
+          Feito com ❤️ por alunos da FIAP.
+        </p>
+
+        <!-- Redes sociais -->
+        <div class="flex items-center gap-4">
+          
+          <a href="https://github.com/thaissindice/Reinventa-Web" target="_blank" rel="noopener noreferrer">
+          <!-- Ícone GitHub -->
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.85 9.68.5.1.68-.22.68-.49
+                 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.14-1.53-1.14-1.53-.93-.65.07-.64.07-.64
+                 1.03.07 1.57 1.09 1.57 1.09.92 1.61 2.41 1.15 3 .88.09-.68.36-1.15.65-1.41-2.22-.26-4.56-1.14-4.56-5.07
+                 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .85-.28 2.8 1.05.81-.23 1.67-.35 2.53-.35.86 0 1.72.12 2.53.35
+                 1.95-1.33 2.8-1.05 2.8-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.37.33.7.97.7 1.96
+                 0 1.41-.01 2.55-.01 2.89 0 .27.18.6.69.49A10.07 10.07 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
+          </svg>
+          </a>
+          
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha sutil superior -->
+    <div class="h-px bg-gray-300"></div>
+  </footer>
+  <!-- Fim Footer -->
+
+</body>
+
+</html>
